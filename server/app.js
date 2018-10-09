@@ -13,16 +13,16 @@ const url = process.env.MONGODB_URI || "mongodb://localhost:27017/medium"
 
 /** configure cloudinary */
 cloudinary.config({
-    cloud_name: 'chidumennamdi',
-    api_key: '',
-    api_secret: ''
+    cloud_name: 'towshif-com',  /*'chidumennamdi',*/
+    api_key: '314985549997986',
+    api_secret: 'GbCLjXkHUaBsWiAYgfCMXnvLmd4'
 })
 
 /** connect to MongoDB datastore */
 try {
     mongoose.connect(url, {
-        //useMongoClient: true
-    })    
+        // useMongoClient: true
+    })  
 } catch (error) {
     
 }
